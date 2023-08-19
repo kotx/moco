@@ -92,7 +92,7 @@ app.get('/get/:name', async (c) => {
       </svg>`,
     200,
     {
-      'Cache-Control': 'no-cache, no-store',
+      'Cache-Control': 'max-age=0, no-cache, no-store, must-revalidate',
       'Content-Type': 'image/svg+xml; charset=utf-8',
       'X-Moco-Count': count,
     }
