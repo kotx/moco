@@ -91,6 +91,14 @@ export default (c: Context<{ Bindings: Env }>) => {
         <ul>
           <li>
             <a
+              href="https://github.com/journey-ad/Moe-Counter"
+              target="_blank"
+              title="Moe Counter"
+              >Moe Counter</a
+            >
+          </li>
+          <li>
+            <a
               href="https://space.bilibili.com/703007996"
               target="_blank"
               title="A-SOUL_Official"
