@@ -1,6 +1,8 @@
 # Moco Counter
 [Moe Counter](https://github.com/journey-ad/Moe-Counter) on [Cloudflare Workers](https://workers.cloudflare.com/).
 
+ ![Moco Counter](https://moco.yukata.dev/get/@moco-gh) 
+
 ## Deployment
 - Clone this repository.
 - Install dependencies with `pnpm install`.
