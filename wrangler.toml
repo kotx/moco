@@ -1,0 +1,15 @@
+#:schema https://raw.githubusercontent.com/snilan/wrangler-json-schema/main/wrangler.schema.json
+
+name = "moco"
+compatibility_date = "2023-08-18"
+main = "src/index.ts"
+
+compatibility_flags = ["nodejs_compat"]
+services = [{ binding = "SELF", service = "moco" }]
+
+[site]
+bucket = "./assets"
+
+[vars]
+PAD = "7"
+DOMAIN = "moco.yukata.dev"
