@@ -92,9 +92,9 @@ export default (c: Context<{ Bindings: Env }>) => {
             <h3 style="display: inline-block; cursor: pointer;">Digit padding</h3>
           </summary>
           <p style="margin: 0;">
-            Just use the query parameters <code>pad</code>, like this:
-            <code>https://${c.env.DOMAIN}/get/@:name?pad=9</code>
-            Or <code>?pad=0</code> for no padding.
+            <p>Just use the query parameters <code>pad</code>, like this:
+            <code>https://${c.env.DOMAIN}/get/@:name?pad=9</code></p>
+            <p>Or <code>?pad=0</code> for no padding.</p>
             <h5>9 digits (pad=9)</h5>
             <img
               src="//${c.env.DOMAIN}/get/@demo.pad?pad=9"
