@@ -54,6 +54,7 @@ const image = async (
 app.get('/get/:name', async (c) => {
   const name = c.req.param('name')
   const theme = c.req.query('theme') || 'moebooru'
+  const pad = c.req.query('pad') || c.env.PAD
 
   let count
   if (name !== '@demo') {
@@ -71,7 +72,7 @@ app.get('/get/:name', async (c) => {
     count = '0123456789'
   }
 
-  const chars = count.padStart(c.env.PAD, '0').split('')
+  const chars = count.padStart(pad, '0').split('')
 
   return c.body(
     html`<?xml version="1.0" encoding="UTF-8"?>
