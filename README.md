@@ -3,7 +3,8 @@
 
  ![Moco Counter](https://moco.yukata.dev/get/@moco-gh) 
 
-## Deployment
+## Self-hosting
+You can use the [hosted instance](https://moco.yukata.dev) for any purpose, but if you want to self-host:
 - Clone this repository.
 - Install dependencies with `pnpm install`.
 - Modify `wrangler.toml` to your liking.
