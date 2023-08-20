@@ -87,6 +87,24 @@ export default (c: Context<{ Bindings: Env }>) => {
             alt="Gelbooru-Hentai"
           />
         </details>
+        <details>
+          <summary style="display: inline-block;">
+            <h3 style="display: inline-block; cursor: pointer;">Digit padding</h3>
+          </summary>
+          <p style="margin: 0;">
+            Just use the query parameters <code>pad</code>, like this:
+            <code>https://${c.env.DOMAIN}/get/@:name?pad=9</code>
+            Or <code>?pad=0</code> for no padding.
+            <img
+              src="//${c.env.DOMAIN}/get/@demo?pad=9"
+              alt="padding 9"
+            />
+            <img
+              src="//${c.env.DOMAIN}/get/@demo?pad=0"
+              alt="padding 0"
+            />
+          </p>
+        </details>
         <h3>Credits</h3>
         <ul>
           <li>
