@@ -16,7 +16,6 @@ export type Env = {
 const app = new Hono<{ Bindings: Env }>()
 
 app.get('/', page)
-app.get('/*', serveStatic({ root: './' }))
 
 const IMAGE_WIDTH = 45
 const IMAGE_HEIGHT = 100
@@ -99,5 +98,7 @@ app.get('/get/:name', async (c) => {
     }
   )
 })
+
+app.get('/*', serveStatic({ root: './' }))
 
 export default app
